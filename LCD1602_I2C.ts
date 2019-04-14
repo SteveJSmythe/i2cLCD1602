@@ -103,7 +103,7 @@ namespace I2C_LCD1602 {
      */
     //% blockId="I2C_LCD1620_SHOW_NUMBER" block="show number %n|at x %x|y %y"
     //% weight=90 blockGap=8
-    //% x.min=0 x.max=20
+    //% x.min=0 x.max=19
     //% y.min=0 y.max=3
     //% parts=LCD1602_I2C trackArgs=0
     export function ShowNumber(n: number, x: number, y: number): void {
@@ -114,12 +114,12 @@ namespace I2C_LCD1602 {
     /**
      * show a string in LCD at given position
      * @param s is string will be show, eg: "Hello"
-     * @param x is LCD column position, [0 - 15], eg: 0
-     * @param y is LCD row position, [0 - 1], eg: 0
+     * @param x is LCD column position, [0 - 19], eg: 0
+     * @param y is LCD row position, [0 - 3], eg: 0
      */
     //% blockId="I2C_LCD1620_SHOW_STRING" block="show string %s|at x %x|y %y"
     //% weight=90 blockGap=8
-    //% x.min=0 x.max=20
+    //% x.min=0 x.max=19
     //% y.min=0 y.max=3
     //% parts=LCD1602_I2C trackArgs=0
     export function ShowString(s: string, x: number, y: number): void {
