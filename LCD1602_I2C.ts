@@ -119,13 +119,17 @@ namespace I2C_LCD1602 {
      */
     //% blockId="I2C_LCD1620_SHOW_STRING" block="show string %s|at x %x|y %y"
     //% weight=90 blockGap=8
-    //% x.min=0 x.max=15
-    //% y.min=0 y.max=1
+    //% x.min=0 x.max=20
+    //% y.min=0 y.max=3
     //% parts=LCD1602_I2C trackArgs=0
     export function ShowString(s: string, x: number, y: number): void {
         let a: number
 
-        if (y > 0)
+        if (y > 2)
+            a = 0xD4
+        else if (y > 1)
+            a = 0x94
+        else if (y > 0)
             a = 0xC0
         else
             a = 0x80
