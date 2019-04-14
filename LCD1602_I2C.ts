@@ -103,8 +103,8 @@ namespace I2C_LCD1602 {
      */
     //% blockId="I2C_LCD1620_SHOW_NUMBER" block="show number %n|at x %x|y %y"
     //% weight=90 blockGap=8
-    //% x.min=0 x.max=15
-    //% y.min=0 y.max=1
+    //% x.min=0 x.max=20
+    //% y.min=0 y.max=3
     //% parts=LCD1602_I2C trackArgs=0
     export function ShowNumber(n: number, x: number, y: number): void {
         let s = n.toString()
